@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:iti_flutter/product_categories.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -7,26 +8,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final List<Map<String, dynamic>> categories = [
-    {'icon': Icons.chair, 'label': 'Chairs'},
-    {'icon': Icons.bed, 'label': 'Beds'},
-    {'icon': Icons.table_bar, 'label': 'Tables'},
-    {'icon': Icons.chair_alt, 'label': 'Sofas'},
-    {'icon': Icons.kitchen, 'label': 'Kitchens'},
-    {'icon': Icons.storage, 'label': 'Storage'},
-    {'icon': Icons.wallpaper, 'label': 'Decor'},
-    {'icon': Icons.lightbulb, 'label': 'Lighting'},
-    {'icon': Icons.plumbing, 'label': 'Plumbing'},
-  ];
-
-  final List<Map<String, dynamic>> products = [
-    {
-      'name': 'Luxury Sofa',
-      'image': 'assets/sofa.jpg',
-      'price': '\$499',
-    },
-  ];
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,13 +31,14 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
+     
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 210, 122, 122),
         elevation: 0,
         leading: Padding(
           padding: const EdgeInsets.all(8.0),
           child: CircleAvatar(
-            backgroundImage: AssetImage('assets/user.jpg'), // your user image here
+            backgroundImage: AssetImage('assets/user.jpg'), 
           ),
         ),
         actions: [
@@ -67,6 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
           )
         ],
       ),
+      
       body: Stack(
         children: [
           Padding(
@@ -164,6 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
           )
         ],
       ),
+     
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: const Color.fromARGB(255, 210, 122, 122),
         items: const [
