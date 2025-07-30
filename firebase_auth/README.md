@@ -11,4 +11,3 @@ This is a simple Flutter application that uses Firebase Authentication for user 
 ******************************************************************************************************************************
 ## ScreenShot for FireBase
 <img width="1446" height="907" alt="6" src="https://github.com/user-attachments/assets/c3575f9c-1a42-416c-8104-2e9db7e6a395" />
-*******************************************************************************************************************************
